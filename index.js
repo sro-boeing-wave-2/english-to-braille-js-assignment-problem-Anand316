@@ -13,7 +13,7 @@ const map1 = new Map(englishToBrailleLiteralSet);
 function braille() {
   let out = '';
   const x = document.getElementById('sourceLangText').value;
-  out += x.split('').map(y => map1.get(y)).join('');
+  out += x.split('').map(z => map1.get(z)).join('');
   document.getElementById('targetLangText').innerHTML = out;
 }
 
